@@ -1,15 +1,13 @@
 <template>
-  <div class="home">
-    <h1>Home</h1>
-    
-    
-  </div>
+  <h2>Hola Mundo</h2>
 </template>
 
 <script>
-
-
 export default {
- 
+
 }
 </script>
+
+<style>
+
+</style>
