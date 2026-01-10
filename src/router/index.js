@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import HolaMundo from "../views/HolaMundo.vue"
 import PokemonView from "../views/PokemonView.vue"
+import PreguntaView from "../views/PreguntaView.vue"
 
 
 const routes = [
@@ -19,7 +20,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')//se carga solo cuando se necesita lazy load
   },
   {
-    path: '/holamundo',
+    path: '/holamundo/:id',
     name: 'holamundo',
     component: HolaMundo
 
@@ -29,6 +30,11 @@ const routes = [
     name: 'pokemon',
     component: PokemonView
   },
+  {
+    path: '/pregunta',
+    name: 'pregunta',
+    component: PreguntaView
+  }
   
 
 ]
